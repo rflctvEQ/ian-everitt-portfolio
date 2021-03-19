@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ian Everitt</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark red lighten-1 mb-4 custom-nav">
+        <a class="navbar-brand" href="#">Ian Everitt</a>
+        <a class="contact-btn" href="#contact">Contact</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler second-button custom-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent23">
+            <ul class="navbar-nav mr-auto">
+                <!-- adding class "active" to any <li> gives it special styling -->
+                <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Big jumbotron with my name and job title -->
+    <header class="jumbotron vh-100 custom-jumbo">
+        <div class="header-div">
+            <h1 class="my-name">IAN EVERITT</h1>
+            <h2 class="web-dev">Full-Stack Web Developer</h2>
+        </div>
+    </header>
+
+    <!-- About, Projects, Writing, Contact -->
+    <main>
+        <!-- About -->
+        <section class="vh-100 about" id="about">
+            <h1>Hi, my name's Ian</h1>
+            <img src="assets/images/portfolio-profile.jpeg" alt="Ian's portrait">
+            <h2>and I'm so happy to meet you.</h2>
+            <h4>I'm a front-end developer learning back-end development through MSU's Coding Bootcamp. See my resume and projects below to get a better idea of what we could accomplish together.</h4>
+        </section>
+
+        <!-- Projects -->
+        <section class="vh-100 projects" id="projects">
+            <h1>My projects</h1>
+
+            <div class="container project-container">
+                <!-- I seem to remember that you can use something like .row-lg (or something like that) -->
+                <!-- TODO I could use that to establish rows based on breakpointss -->
+                <div class="row justify-content-center row1">
+                    <a href="https://rflctveq.github.io/brews-and-loos/" target="_blank" class="col-3 project project1">
+                        <h2 class="project-title">Good Brews and Neutral Loos</h2>
+                        <div class="description">
+                            <p>Search a city to find breweries with gender-neutral restrooms.</p>
+                        </div>
+                    </a>
+                    <a href="https://rflctveq.github.io/weather-dashboard/" target="_blank" class="col-3 project project2">
+                        <h2>Weather Dashboard</h2>
+                        <div class="description">
+                            <p>Search a city and see the current weather and a five-day forecast.</p>
+                        </div>
+                    </a>
+                    <a href="https://rflctveq.github.io/work-day-scheduler/" target="_blank" class="col-3 project project3">
+                        <h2>Workday Scheduler</h2>
+                        <div class="description">
+                            <p>Schedule out your workday and save your to-dos to local storage.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="row justify-content-center row2">
+                    <a href="https://rflctveq.github.io/code-quiz-game/" target="_blank" class="col-3 project project4">
+                        <h2>Code Quiz</h2>
+                        <div class="description">
+                            <p>Test out your knowledge of vanilla JavaScript. Try to beat your previous scores!</p>
+                        </div>
+                    </a>
+                    <a href="https://rflctveq.github.io/password-generator/" target="_blank" class="col-3 project project5">
+                        <h2>Random Password Generator</h2>
+                        <div class="description">
+                            <p>Generate a 8-128 character password using your choice of lowercase, uppercase, number, or special characters.</p>
+                        </div>
+                    </a>
+                    <a href="https://rflctveq.github.io/my-first-portfolio/" target="_blank" class="col-3 project project6">
+                        <h2>My first portfolio</h2>
+                        <div class="description">
+                            <p>This is the first page I ever created -- see how far I've come!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Writing -->
+        <!-- TODO Maybe I could include resume highlights here with a link to my resume (or something like that)-->
+        <section class="vh-100 writing" id="writing">
+
+        </section>
+
+        <!-- Contact -->
+        <!-- TODO Doesn't need to be .vh-100 -->
+        <section class="vh-100 contact" id="contact">
+            
+        </section> 
+    </main>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/147b70c93c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
