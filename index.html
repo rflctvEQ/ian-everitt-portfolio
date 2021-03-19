@@ -19,14 +19,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent23">
             <ul class="navbar-nav mr-auto">
                 <!-- adding class "active" to any <li> gives it special styling -->
-                <li class="nav-item">
+                <li class="nav-item about-link">
                 <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link projects-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link projects-link" href="#resume">Resume</a>
                 </li>
             </ul>
         </div>
@@ -43,7 +43,7 @@
     <!-- About, Projects, Writing, Contact -->
     <main>
         <!-- About -->
-        <section class="vh-100 about" id="about">
+        <section class="about" id="about">
             <h1>Hi, my name's Ian</h1>
             <img src="assets/images/portfolio-profile.jpeg" alt="Ian's portrait">
             <h2>and I'm so happy to meet you.</h2>
@@ -51,46 +51,44 @@
         </section>
 
         <!-- Projects -->
-        <section class="vh-100 projects" id="projects">
+        <section class="projects" id="projects">
             <h1>My projects</h1>
-
             <div class="container project-container">
                 <!-- I seem to remember that you can use something like .row-lg (or something like that) -->
                 <!-- TODO I could use that to establish rows based on breakpointss -->
                 <div class="row justify-content-center row1">
-                    <a href="https://rflctveq.github.io/brews-and-loos/" target="_blank" class="col-3 project project1">
+                    <a href="https://rflctveq.github.io/brews-and-loos/" target="_blank" class="col-10 col-md-4 col-lg-3 project project1">
                         <h2 class="project-title">Good Brews and Neutral Loos</h2>
                         <div class="description">
                             <p>Search a city to find breweries with gender-neutral restrooms.</p>
                         </div>
                     </a>
-                    <a href="https://rflctveq.github.io/weather-dashboard/" target="_blank" class="col-3 project project2">
+                    <a href="https://rflctveq.github.io/weather-dashboard/" target="_blank" class="col-10 col-md-4 col-lg-3 project project2">
                         <h2>Weather Dashboard</h2>
                         <div class="description">
                             <p>Search a city and see the current weather and a five-day forecast.</p>
                         </div>
                     </a>
-                    <a href="https://rflctveq.github.io/work-day-scheduler/" target="_blank" class="col-3 project project3">
+                    <a href="https://rflctveq.github.io/work-day-scheduler/" target="_blank" class="col-10 col-md-4 col-lg-3 project project3">
                         <h2>Workday Scheduler</h2>
                         <div class="description">
-                            <p>Schedule out your workday and save your to-dos to local storage.</p>
+                            <p>Schedule out your workday and save your to-dos in local storage.</p>
                         </div>
                     </a>
-                </div>
-                <div class="row justify-content-center row2">
-                    <a href="https://rflctveq.github.io/code-quiz-game/" target="_blank" class="col-3 project project4">
+                <!-- <div class="justify-content-center row2"> -->
+                    <a href="https://rflctveq.github.io/code-quiz-game/" target="_blank" class="col-10 col-md-4 col-lg-3 project project4">
                         <h2>Code Quiz</h2>
                         <div class="description">
-                            <p>Test out your knowledge of vanilla JavaScript. Try to beat your previous scores!</p>
+                            <p>Test out your knowledge of vanilla JavaScript. Try to beat your best scores!</p>
                         </div>
                     </a>
-                    <a href="https://rflctveq.github.io/password-generator/" target="_blank" class="col-3 project project5">
+                    <a href="https://rflctveq.github.io/password-generator/" target="_blank" class="col-10 col-md-4 col-lg-3 project project5">
                         <h2>Random Password Generator</h2>
                         <div class="description">
-                            <p>Generate a 8-128 character password using your choice of lowercase, uppercase, number, or special characters.</p>
+                            <p>Generate an 8-128 character password using your choice of lowercase, uppercase, number, or special characters.</p>
                         </div>
                     </a>
-                    <a href="https://rflctveq.github.io/my-first-portfolio/" target="_blank" class="col-3 project project6">
+                    <a href="https://rflctveq.github.io/my-first-portfolio/" target="_blank" class="col-10 col-md-4 col-lg-3 project project6">
                         <h2>My first portfolio</h2>
                         <div class="description">
                             <p>This is the first page I ever created -- see how far I've come!</p>
@@ -101,15 +99,46 @@
         </section>
 
         <!-- Writing -->
-        <!-- TODO Maybe I could include resume highlights here with a link to my resume (or something like that)-->
-        <section class="vh-100 writing" id="writing">
-
+        <section class="resume" id="resume">
+            <h1>Take a look at <a href="assets/linked-files/Resume-Ian-Everitt.pdf" target="_blank" class="resume-link">my resume</a> for a look into my professional career so far.</h1>
+            
+            <div class="teaching">
+                <img src="assets/images/open-book.png" alt="open book icon">
+                <section class="courses">
+                    <h2>Besides programming, I really enjoy researching and writing philosophy. Check out some of the classes I've taught:</h2>
+                    <ul>
+                        <li><a href="assets/linked-files/PHIL2250-syllabus.pdf" target="_blank"><h4>Science, Technology, and Values</h4></a></li>
+                        <li><a href="assets/linked-files/PHIL3170-syllabus.pdf" target="_blank"><h4>Environmental Ethics</h4></a></li>
+                        <li><a href="assets/linked-files/PHIL2010-syllabus.pdf" target="_blank"><h4>Intro to Ethics</h4></a></li>
+                        <li><a href="assets/linked-files/PHIL2100-syllabus.pdf" target="_blank"><h4>Contemporary Problems in Ethics</h4></a></li>
+                    </ul>
+                </section>
+                
+            </div>
         </section>
 
         <!-- Contact -->
-        <!-- TODO Doesn't need to be .vh-100 -->
         <section class="vh-100 contact" id="contact">
-            
+            <div class="contact-row">
+                <div class="contact-column">
+                    <h1>Contact me</h1>
+                    <div class="center-name-email">
+                        <h2>Ian Everitt</h2>
+                        <h3>ian.andrew.everitt@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="links">
+                    <a href="mailto:ian.andrew.everitt@gmail.com" target="_blank">
+                        <img src="assets/images/gmail-logo.png" alt="Gmail logo" class="gmail-logo">
+                    </a>
+                    <a href="https://github.com/rflctvEQ" target="_blank">
+                        <img src="assets/images/github-logo.png" alt="GitHub logo" class="github-logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ian-everitt-451973201/" target="_blank">
+                        <img src="assets/images/linkedin-logo.png" alt="LinkedIn logo" class="linkedin-logo">
+                    </a>
+                </div>
+            </div>
         </section> 
     </main>
     

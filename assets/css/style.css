@@ -103,6 +103,7 @@ html {
     margin-bottom: 0 !important;
     position: sticky;
     top: 0;
+    transition: top 0.3s;
     z-index: 1;
 }
 
@@ -131,6 +132,7 @@ html {
     background-color: black; 
     color: white;
     border-radius: 0;
+    border-bottom: 1px solid black;
     background-image: url("../images/looking-up.jpg");
     background-size: cover;
     background-position: center;
@@ -165,7 +167,7 @@ html {
 
 /* 1. About Section */ 
 .about {
-
+    min-height: 100vh;
 }
 
 .about-heading {
@@ -203,6 +205,7 @@ html {
 .projects {
     background-color: black;
     color: white;
+    min-height: 100vh;
 }
 
 .projects h1 {
@@ -243,12 +246,194 @@ html {
 }
 
 /* 3. Writing Section */
-.about {
-
+.resume h1 {
+    max-width: 80%;
+    margin: 2rem;
 }
+
+.green {
+    color: green;
+}
+
+.resume a {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.resume a:hover {
+    color: rgb(75, 0, 160);
+}
+
+.teaching {
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.teaching img {
+    margin-right: 10px;
+    margin-left: 4rem;
+}
+
+.courses {
+    margin-left: 75px;
+    margin-right: 2rem;
+    border: 15px solid var(--purple);
+    border-radius: 35px;
+    padding: 10px;
+}
+
+.courses h2 {
+    margin-bottom: 15px;
+}
+
+.courses ul {
+    list-style-type: disclosure-closed;
+}
+
+.courses ul li {
+    line-height: 4.5;
+    margin-left: -19px;
+}
+
+.courses ul li a {
+    text-decoration: none;
+}
+
 
 /* 4. Contact Section */ 
 .contact {
     background-color: black;
     color: white;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    padding-top: 175px;
+}
+
+.center-name-email {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-row h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: var(--purple);
+}
+
+.contact-row h2 {
+    font-size: 3rem;
+}
+
+.contact-row .links{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-row .links a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+/* TODO gonna need a media query for .teaching {flex-wrap: wrap} at some breakpoint */
+
+@media screen and (max-width: 1100px) {
+    .resume .teaching img {
+        max-width: 430px;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .resume .teaching h2 {
+        font-size: 25px;
+    }
+
+    .resume .teaching h3 {
+        font-size: 18px;
+    }
+
+    .courses {
+        margin-left: 30px;
+    }
+
+    .courses ul li {
+        line-height: 2.5;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .resume .teaching {
+        flex-wrap: wrap-reverse;
+    }
+
+    .resume .teaching img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .custom-jumbo .header-div .my-name {
+        font-size: 3rem;
+    }
+
+    .custom-jumbo .header-div .web-dev {
+        font-size: 1rem;
+    }
+
+    .about h4 {
+        width: 80%;
+        font-size: 1.25rem;
+        margin-bottom: 4rem;
+    }
+
+    .projects {
+        padding-bottom: 4rem;
+    }
+
+    .resume h1 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .resume .courses {
+        border: 8px solid var(--purple);
+    }
+
+    .resume .courses h2 {
+        font-size: 19px;
+    }
+
+    .resume .courses h4 {
+        font-size: 15px;
+    }
+
+    .resume .teaching {
+        margin-top: 50px;
+    }
+
+    .resume .teaching img {
+        max-width: 250px;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact h3 {
+        font-size: 1rem;
+    }
 }
