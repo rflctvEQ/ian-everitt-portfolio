@@ -9,8 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-dark red lighten-1 mb-4 custom-nav">
-        <a class="navbar-brand" href="#">Ian Everitt</a>
-        <a class="contact-btn" href="#contact">Contact</a>
+        <a class="navbar-brand nav-name" href="#">Ian Everitt</a>
         <!-- Collapse button -->
         <button class="navbar-toggler second-button custom-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
@@ -20,13 +19,16 @@
             <ul class="navbar-nav mr-auto">
                 <!-- adding class "active" to any <li> gives it special styling -->
                 <li class="nav-item about-link">
-                <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link projects-link" href="#projects">Projects</a>
+                    <a class="nav-link projects-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link projects-link" href="#resume">Resume</a>
+                    <a class="nav-link projects-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link projects-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +49,7 @@
             <h1>Hi, my name's Ian</h1>
             <img src="assets/images/portfolio-profile.jpeg" alt="Ian's portrait">
             <h2>and I'm so happy to meet you.</h2>
-            <h4>I'm a front-end developer learning back-end development through MSU's Coding Bootcamp. See my resume and projects below to get a better idea of what we could accomplish together.</h4>
+            <h4>I'm a front-end developer learning back-end development through MSU's Coding Bootcamp. See my resume and my projects below to get a better idea of what we could accomplish together.</h4>
         </section>
 
         <!-- Projects -->
@@ -55,53 +57,74 @@
             <h1>My projects</h1>
             <div class="container project-container">
                 <!-- I seem to remember that you can use something like .row-lg (or something like that) -->
-                <!-- TODO I could use that to establish rows based on breakpointss -->
                 <div class="row justify-content-center row1">
-                    <a href="https://rflctveq.github.io/brews-and-loos/" target="_blank" class="col-10 col-md-4 col-lg-3 project project1">
-                        <h2 class="project-title">Good Brews and Neutral Loos</h2>
+                    <figure class="col-10 col-md-4 col-lg-3 project project1">
                         <div class="description">
+                            <p>Good Brews and Neutral Loos</p>
                             <p>Search a city to find breweries with gender-neutral restrooms.</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/brews-and-loos" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/brews-and-loos/" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://rflctveq.github.io/weather-dashboard/" target="_blank" class="col-10 col-md-4 col-lg-3 project project2">
-                        <h2>Weather Dashboard</h2>
+                    </figure>
+                    <figure class="col-10 col-md-4 col-lg-3 project project2">
                         <div class="description">
+                            <p>Weather Dashboard</p>
                             <p>Search a city and see the current weather and a five-day forecast.</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/weather-dashboard" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/weather-dashboard/" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://rflctveq.github.io/work-day-scheduler/" target="_blank" class="col-10 col-md-4 col-lg-3 project project3">
-                        <h2>Workday Scheduler</h2>
+                    </figure>
+                    <figure class="col-10 col-md-4 col-lg-3 project project3">
                         <div class="description">
+                            <p>Workday Scheduler</p>
                             <p>Schedule out your workday and save your to-dos in local storage.</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/work-day-scheduler" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/work-day-scheduler/" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
-                <!-- <div class="justify-content-center row2"> -->
-                    <a href="https://rflctveq.github.io/code-quiz-game/" target="_blank" class="col-10 col-md-4 col-lg-3 project project4">
-                        <h2>Code Quiz</h2>
+                    </figure>
+                    <figure class="col-10 col-md-4 col-lg-3 project project4">
                         <div class="description">
+                            <p>Code Quiz</p>
                             <p>Test out your knowledge of vanilla JavaScript. Try to beat your best scores!</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/code-quiz-game" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/code-quiz-game" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://rflctveq.github.io/password-generator/" target="_blank" class="col-10 col-md-4 col-lg-3 project project5">
-                        <h2>Random Password Generator</h2>
+                    </figure>
+                    <figure class="col-10 col-md-4 col-lg-3 project project5">
                         <div class="description">
+                            <p>Password Generator</p>
                             <p>Generate an 8-128 character password using your choice of lowercase, uppercase, number, or special characters.</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/password-generator" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/password-generator/" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://rflctveq.github.io/my-first-portfolio/" target="_blank" class="col-10 col-md-4 col-lg-3 project project6">
-                        <h2>My first portfolio</h2>
+                    </figure>
+                    <figure class="col-10 col-md-4 col-lg-3 project project6">
                         <div class="description">
+                            <p>My first portfolio</p>
                             <p>This is the first page I ever created -- see how far I've come!</p>
+                            <div class="link-buttons">
+                                <a href="https://github.com/rflctvEQ/my-first-portfolio" target="_blank" class="github-link">GitHub Repo</a>
+                                <a href="https://rflctveq.github.io/my-first-portfolio/" target="_blank" class="project-link">Visit site</a>
+                            </div>
                         </div>
-                    </a>
+                    </figure>
                 </div>
             </div>
         </section>
 
         <!-- Writing -->
         <section class="resume" id="resume">
-            <h1>Take a look at <a href="assets/linked-files/Resume-Ian-Everitt.pdf" target="_blank" class="resume-link">my resume</a> for a look into my professional career so far.</h1>
-            
+            <h1>Take a look at <a href="assets/linked-files/resume-ian-everitt.pdf" target="_blank" class="resume-link">my resume</a> for a look into my professional career so far.</h1>
             <div class="teaching">
                 <img src="assets/images/open-book.png" alt="open book icon">
                 <section class="courses">
@@ -113,7 +136,6 @@
                         <li><a href="assets/linked-files/PHIL2100-syllabus.pdf" target="_blank"><h4>Contemporary Problems in Ethics</h4></a></li>
                     </ul>
                 </section>
-                
             </div>
         </section>
 
@@ -125,6 +147,7 @@
                     <div class="center-name-email">
                         <h2>Ian Everitt</h2>
                         <h3>ian.andrew.everitt@gmail.com</h3>
+                        <h3>867-5309</h3>
                     </div>
                 </div>
                 <div class="links">
