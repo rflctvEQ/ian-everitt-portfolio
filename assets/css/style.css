@@ -227,6 +227,11 @@ html {
     border-color: var(--light);
 }
 
+.project .project-title {
+    font-weight: 700;
+    font-style: oblique;
+}
+
 .project .description {
     display: none;
 }
