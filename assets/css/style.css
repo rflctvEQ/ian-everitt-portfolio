@@ -225,6 +225,7 @@ html {
     transform: scale(1.25);
     z-index: 1;
     border-color: var(--light);
+    /* TODO it would be cool to add opacity like notification center on ios */
 }
 
 .project .project-title {
