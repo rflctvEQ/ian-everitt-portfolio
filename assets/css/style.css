@@ -146,6 +146,8 @@ html {
     font-size: 5.5rem;
     padding: 0 15px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .75;
+    backdrop-filter: blur(6px);
 }
 
 .custom-jumbo h2 {
@@ -153,6 +155,8 @@ html {
     color: white;
     background-color: var(--purple);
     font-family: 'Courier New', Courier, monospace;
+    opacity: .75;
+    backdrop-filter: blur(6px);
 }
 
 /* Main Content */ 
@@ -220,12 +224,11 @@ html {
 .project:hover {
     text-decoration: none;
     color: var(--light);
-    background-color: rgb(75, 0, 160);
+    background-color: rgb(51, 2, 107);
     background-image: none;
-    transform: scale(1.25);
+    transform: scale(1.15);
     z-index: 1;
     border-color: var(--light);
-    /* TODO it would be cool to add opacity like notification center on ios */
 }
 
 .project .project-title {

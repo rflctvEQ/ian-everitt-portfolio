@@ -2,22 +2,11 @@ $(document).ready(function() {
 
     // event handler for hamburger icon animation
     $('.second-button').on('click', function() {
-
       $('.animated-icon').toggleClass('open');
     });
 
     // event handlers for collapsing navbar menu when links are clicked 
-    $('.about-link').on('click', function() {
-      $('.animated-icon').toggleClass('open');
-      $('.navbar-collapse').removeClass('show')
-    });
-
-    $('.projects-link').on('click', function() {
-      $('.animated-icon').toggleClass('open');
-      $('.navbar-collapse').removeClass('show')
-    });
-
-    $('.resume-link').on('click', function() {
+    $('.nav-link').on('click', function() {
       $('.animated-icon').toggleClass('open');
       $('.navbar-collapse').removeClass('show')
     });
