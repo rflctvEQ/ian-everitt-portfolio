@@ -111,7 +111,6 @@ body {
 .custom-nav {
     background-color: var(--dark);
     margin-bottom: 0 !important;
-    /* position: sticky; */
     position: fixed;
     width: 100%;
     top: 0;

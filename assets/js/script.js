@@ -19,6 +19,9 @@ $(document).ready(function() {
     // this ensures that the navbar doesn't disappear when the user clicks on the hamburger icon
     } else if ($('.animated-icon').hasClass('open') === true) {
       $('.custom-nav').css('top', '0');
+    // this fixes a bug for mobile ux where navbar disappears when users scrolls to top
+    } else if (currentScrollPos < 30) {
+      $('.custom-nav').css('top', '0');
     } else {
       $('.custom-nav').css('top', '-50px');
     }
