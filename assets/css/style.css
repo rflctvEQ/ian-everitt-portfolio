@@ -111,10 +111,12 @@ body {
 .custom-nav {
     background-color: var(--dark);
     margin-bottom: 0 !important;
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
+    width: 100%;
     top: 0;
     transition: top 0.3s;
-    z-index: 2;
+    z-index: 9000;
 }
 
 .custom-nav .nav-name {
