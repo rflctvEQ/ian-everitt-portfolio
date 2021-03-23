@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     // navbar scroll behavior
     let prevScrollPos = window.pageYOffset;
-    window.onscroll = function() {
+    window.addEventListener("scroll", function() {
       let currentScrollPos = window.pageYOffset;
       if (prevScrollPos > currentScrollPos) {
         $('.custom-nav').css('top', '0');
@@ -24,9 +24,20 @@ $(document).ready(function() {
         $('.custom-nav').css('top', '-50px');
       }
       prevScrollPos = currentScrollPos
-    }
+    });
 
     // gsap animation for .custom-jumbo
-    gsap.from(".my-name", {duration: 3.5, opacity: 0, scale: 0.01, ease: "back"});
-    gsap.from(".web-dev", {duration: 1, opacity: 0, y: 150, delay: 2.5});
-  });
+    gsap.from(".my-name", {
+      duration: 3.5, 
+      opacity: 0, 
+      scale: 0.01, 
+      ease: "back"
+    });
+
+    gsap.from(".web-dev", { 
+      duration: 1, 
+      opacity: 0, 
+      y: 150, 
+      delay: 2.5
+    });
+});
