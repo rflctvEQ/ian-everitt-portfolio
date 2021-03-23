@@ -163,7 +163,8 @@ html {
 
 /* 1. About Section */ 
 .about {
-    min-height: 100vh;
+    min-height: 120vh;
+    background-color: white;
 }
 
 .about h1 {
@@ -200,7 +201,7 @@ html {
 .projects {
     background-color: var(--dark);
     color: var(--light);
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .projects h1 {
@@ -320,7 +321,12 @@ html {
     height: 250px;
 }
 
-/* 3. Writing Section */
+/* 3. Resume Section */
+.resume {
+    background-color: white;
+    min-height: 120vh;
+}
+
 .resume h1 {
     max-width: 80%;
     margin: 2rem;
@@ -381,6 +387,7 @@ html {
 .contact {
     background-color: var(--dark);
     color: var(--light);
+    min-height: 100vh;
 }
 
 .contact-row {
@@ -461,6 +468,10 @@ html {
         font-size: 1.25rem;
     }
 
+    .about {
+        padding-bottom: 100px;
+    }
+
     .about h4 {
         width: 80%;
         font-size: 1.25rem;
@@ -468,7 +479,11 @@ html {
     }
 
     .projects {
-        padding-bottom: 4rem;
+        padding-bottom: 100px;
+    }
+
+    .resume {
+        padding-bottom: 100px;
     }
 
     .resume h1 {
