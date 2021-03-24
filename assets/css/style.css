@@ -334,11 +334,13 @@ body {
 .resume {
     background-color: white;
     min-height: 120vh;
+    padding-bottom: 2rem;
 }
 
 .resume h1 {
     max-width: 80%;
     margin: 2rem;
+    padding-top: 2rem;
 }
 
 .green {
