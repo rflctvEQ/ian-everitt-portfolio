@@ -366,6 +366,7 @@ body {
 .teaching img {
     margin-right: 10px;
     margin-left: 4rem;
+    display: block;
 }
 
 .courses {
