@@ -1,7 +1,7 @@
 # My Portfolio
-This is my personal portfolio. I've linked five of the projects I'm proudest of, my resume, and different ways to contact me (of course, the phone number I have listed is not my own). 
+This is my personal portfolio. I've linked six of the projects I'm proudest of, my resume, and different ways to contact me. 
 
-I have a number of future plans to improve the site. For example, I'd like to include more animations to enrich the UX, I'd like to use icons for my project buttons (rather than screenshots of the projects themselves), and I'd like to make the Contact section more like a footer rather than a dedicated section of the page. Furthermore, I'd like to dedicate a section in my portfolio to my philosophical endeavors, but I haven't yet found the best way to do that, so this section is currently more of a placeholder than anything. 
+I have a number of future plans to improve the site. For example, I'd like to include more animations to enrich the UX, I'd like to use icons for my project buttons (rather than screenshots of the projects themselves), and I'd like to make the Contact section more like a footer rather than a dedicated section of the page. I'd also like to include functionality to allow people to contact me directly through my site. Furthermore, I think I'd like to dedicate a section in my portfolio to my philosophical endeavors, but I haven't yet found the best way to do that. 
 
 ## Deployment 
 To visit this website, simply follow this [link](https://rflctveq.github.io/ian-everitt-portfolio/) or enter the following into your address bar: https://rflctveq.github.io/ian-everitt-portfolio/. 
@@ -16,7 +16,7 @@ To visit this website, simply follow this [link](https://rflctveq.github.io/ian-
 * GitHub Pages (host)
 
 ## Screenshots
-Here's are a couple images of my portfolio as seen on a desktop:
+Here are a couple images of my portfolio as seen on a desktop:
 
 ![desktop-splash](assets/images/desktop-ss-jumbo.png)
 
