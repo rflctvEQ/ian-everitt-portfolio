@@ -167,4 +167,19 @@ $(document).ready(function() {
       pinSpacing: false
     });
   });
+
+  // changes tech logo sizes for smaller viewports
+  let techDiv = $('.tech-logo');
+  if ($(this).width() <= 600) {
+    techDiv.children().attr('width', '100');
+  };
+
+  // for when potential employers go to see the responsiveness of my page ;)
+  $(window).resize(function() {
+    if ($(this).width() <= 600) {
+      techDiv.children().attr('width', '100');
+    } else {
+      techDiv.children().attr('width', '200');
+    };
+  })
 });

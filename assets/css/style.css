@@ -287,31 +287,31 @@ body {
 }
 
 .project1 {
-    background-image: url("../images/gbnl.png");
+    background-image: url("../images/group-mentality.png");
     background-size: cover;
     background-position: center;
 }
 
 .project2 {
-    background-image: url("../images/weather.png");
+    background-image: url("../images/gbnl.png");
     background-size: cover;
     background-position: center;
 }
 
 .project3 {
-    background-image: url("../images/workday.png");
+    background-image: url("../images/weather.png");
     background-size: cover;
     background-position: center;
 }
 
 .project4 {
-    background-image: url("../images/js-quiz.png");
+    background-image: url("../images/workday.png");
     background-size: cover;
     background-position: center;
 }
 
 .project5 {
-    background-image: url("../images/pass-gen.png");
+    background-image: url("../images/js-quiz.png");
     background-size: cover;
     background-position: center;
 }
@@ -354,6 +354,20 @@ body {
 
 .resume a:hover {
     color: rgb(75, 0, 160);
+}
+
+.technologies-title {
+    margin-bottom: 2rem !important;
+}
+
+.tech-logo {
+    width: 100px;
+    /* max-height: auto; */
+}
+
+.express-div, .mongodb-div {
+    display: flex;
+    align-items: center;
 }
 
 .teaching {
