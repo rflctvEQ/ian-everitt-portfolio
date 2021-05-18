@@ -365,6 +365,10 @@ body {
     /* max-height: auto; */
 }
 
+.technologies {
+    margin-bottom: 10rem;
+}
+
 .express-div, .mongodb-div {
     display: flex;
     align-items: center;
@@ -455,7 +459,7 @@ body {
     }
 }
 
-@media screen and (max-width: 970px) {
+/* @media screen and (max-width: 970px) {
     .resume .teaching h2 {
         font-size: 25px;
     }
@@ -471,7 +475,7 @@ body {
     .courses ul li {
         line-height: 2.5;
     }
-}
+} */
 
 @media screen and (max-width: 850px) {
     .resume .teaching {
@@ -515,6 +519,19 @@ body {
     .resume h1 {
         font-size: 1.5rem;
         line-height: 1.25;
+    }
+
+    .technologies {
+        text-align: center;
+    }
+
+    .tech-logo {
+        width: initial;
+        margin-bottom: 1.5rem;
+    }
+
+    .express-div, .mongodb-div {
+        justify-content: center;
     }
 
     .resume .courses {
